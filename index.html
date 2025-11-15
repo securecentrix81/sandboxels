@@ -2,6 +2,20 @@
 <html lang="en" class="homepage">
 
 <head>
+	    <!-- start of "normal person" blocker -->
+<div id="d0082e1c-16cc-4a7e-b920-d2b5bf8c3ce1" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;background-color:#ffffff;z-index:2147483649;">Validating authentication state. Login at the <a href="/">home page</a></div>
+<script>
+  try {
+    if (!localStorage.getItem("userIsValidated")) {
+      window.location.replace("/")
+    } else {
+      document.getElementById("d0082e1c-16cc-4a7e-b920-d2b5bf8c3ce1").remove()
+    }
+  } catch (e) {
+    window.location.replace("/")
+  }
+</script>
+<!-- end of "normal person" blocker -->
 	<meta charset="utf-8">
 	<title id="titleTag">Sandboxels - Experiment with Pixels</title>
 	<meta name="description" content="Relax or experiment with over 500 materials in this falling sand simulator, featuring heat, chemical reactions, density, burning, explosions." id="pageDesc">
